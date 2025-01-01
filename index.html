@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archetypal Cartography</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com?v=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Metamorphous&family=Rasa:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo-white.png" alt="Kir Roberts Logo"></a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="Images.html">Images</a></li>
+                    <li><a href="Videos.html">Videos</a></li>
+                    <li><a href="Audio.html">Audio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+                <div class="burger-menu" onclick="toggleMenu()">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-video-container">
+            <video autoplay muted loop id="hero-video" style="width: 100%; height: auto;">
+                <source src="videos/hero-edit.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="projects-container">
+            <h1>Projects</h1>
+            <div class="projects-gallery">
+                <div class="project-box" onclick="openLink1()">
+                    <p>五輪書</p>
+                </div>
+                <div class="project-box" onclick="openLink2()">
+                    <p>Francisco Navarro</p>
+                </div>
+                <div class="project-box" onclick="openLink6()">
+                    <p>Al-Andalus</p>
+                </div>
+                <div class="project-box" onclick="openLink3()">
+                    <p>Verticality</p>
+                </div>
+                <div class="project-box" onclick="openLink4()">
+                    <p>What is Art?</p>
+                </div>
+                <div class="project-box" onclick="openLink5()">
+                    <p>The Living Symbol</p>
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Kir Roberts. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active'); // Toggle 'active' class to show/hide menu
+        }
+    </script>
+
+    <script>
+        function openLink1() {
+            window.open("https://docs.google.com/document/d/159dGPFij3bnRkWZqWmTNCfJ6qPg06UaSgd6gLMpOHGU/edit?usp=sharing", "_blank");
+        }
+
+    function openLink2() {
+            window.open("https://docs.google.com/document/d/1yyYDlUrcq8TJ2e46FTQwXI9BaaKQsK0ggTXPeTOLTq8/edit?usp=sharing", "_blank");
+        }
+
+    function openLink3() {
+            window.open("https://docs.google.com/document/d/1efiAybMX-YqH599O35SWZGquZGIfpXtuU6eARCBng50/edit?usp=sharing", "_blank");
+        }
+
+    function openLink4() {
+            window.open("https://docs.google.com/document/d/10NGyiFKdGneFwdA39EstiobEdbry_tnZMyKgDTPDK80/edit?usp=sharing", "_blank");
+        }
+
+    function openLink5() {
+            window.open("https://docs.google.com/document/d/1mTQFttBNCJPiCM6vtiTUZmMzOdvlN_q8R5lVlp8_z-Q/edit?usp=sharing", "_blank");
+        }
+
+    function openLink6() {
+            window.open("https://docs.google.com/document/d/1_SzmrAGta8LUuRdfRFCxIEA0QcYLQfe9zFvyqMFNqWQ/edit?usp=sharing", "_blank");
+        }
+    </script>
+</body>
+</html>

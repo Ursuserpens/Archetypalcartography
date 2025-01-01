@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images - Kir Roberts</title>
+    <link rel="stylesheet" href="audio-styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=EB+Garamond:wght@400;700&family=Metamorphous&family=Rasa:wght@300..700&display=swap" rel="stylesheet">
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo-white.png" alt="Kir Roberts Logo"></a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="Images.html">Images</a></li>
+                    <li><a href="Videos.html">Videos</a></li>
+                    <li><a href="Audio.html">Audio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+                <div class="burger-menu" onclick="toggleMenu()">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+        <div class="heading-container">
+            <h1>Audio</h1>
+            <span class="subheading">Listening stuff</span>
+        </div>
+
+    <div class="audio-section">
+            <h2>A Fool's Gnosis Video Companion pt. 1</h2>
+        <audio controls>
+            <source src="audio/FG1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+       </audio>
+    </div>
+
+    <div class="audio-section">
+            <h2>A Fool's Gnosis Video Companion pt. 2</h2>
+        <audio controls>
+            <source src="audio/FG2.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+       </audio>
+    </div>
+
+    <div class="audio-section">
+            <h2>A Fool's Gnosis Video Companion pt. 3</h2>
+        <audio controls>
+            <source src="audio/FG3.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+       </audio>
+    </div>
+
+    <div class="audio-section">
+            <h2>A Fool's Gnosis Video Companion pt. 4</h2>
+        <audio controls>
+            <source src="audio/FG4.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+       </audio>
+    </div>
+
+    <div class="audio-section">
+            <h2>A Fool's Gnosis Video Companion pt. 5</h2>
+        <audio controls>
+            <source src="audio/FG5.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+       </audio>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Kir Roberts. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active'); // Toggle 'active' class to show/hide menu
+        }
+    </script>
+</body>
+</html>
+

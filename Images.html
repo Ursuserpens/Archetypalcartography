@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images - Kir Roberts</title>
+    <link rel="stylesheet" href="blog-styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=EB+Garamond:wght@400;700&family=Metamorphous&family=Rasa:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo-white.png" alt="Kir Roberts Logo"></a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="Images.html">Images</a></li>
+                    <li><a href="Videos.html">Videos</a></li>
+                    <li><a href="Audio.html">Audio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+                <div class="burger-menu" onclick="toggleMenu()">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="heading-container">
+            <h1>Galleries</h1>
+            <span class="subheading"></span>
+        </div>
+
+        <div class="blog-gallery">
+            <div class="blog-item">
+                <a href="images/galleries/morning/morning.html">
+                    <img src="images/4.jpg" alt="morning-image">
+                    <h2>Morning</h2>
+                </a>
+            </div>
+
+            <div class="blog-item">
+                <a href="images/galleries/day/day.html">
+                    <img src="images/19.jpg" alt="Spandakarika-essay">
+                    <h2>Day</h2>
+                </a>
+            </div>
+
+            <div class="blog-item">
+                <a href="images/galleries/evening/evening.html">
+                    <img src="images/11.jpg" alt="Spandakarika-essay">
+                    <h2>Evening</h2>
+                </a>
+            </div>
+
+            <div class="blog-item">
+                <a href="images/galleries/night/night.html">
+                    <img src="images/5.jpg" alt="Spandakarika-essay">
+                    <h2>Night</h2>
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+       <div class="footer-content">
+        <p>&copy; 2024 Kir Roberts. All rights reserved.</p>
+       </div class="footer-content">
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active'); // Toggle 'active' class to show/hide menu
+        }
+    </script>
+</body>
+</html>

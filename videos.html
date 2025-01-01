@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos - Kir Roberts</title>
+    <link rel="stylesheet" href="video-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com?v=1.0">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=EB+Garamond:wght@400;700&family=Metamorphous&family=Rasa:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo-white.png" alt="Kir Roberts Logo"></a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="Images.html">Images</a></li>
+                    <li><a href="Videos.html">Videos</a></li>
+                    <li><a href="Audio.html">Audio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+                <div class="burger-menu" onclick="toggleMenu()">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+  <main>
+
+        <div class="heading-container">
+            <h1>Videos</h1>
+            <span class="subheading">Light and sound for your sensual pleasure</span>
+        </div>
+
+    <div class="video-gallery">
+        <div class="video-item">
+            <a href="https://drive.google.com/file/d/1YL6azikvWFhucr9iusuTSVYD0rTYMNJ0/view?usp=sharing">
+                <img src="videos/quantocks.jpg" alt="Quantocks">
+                <h2>An Ode to Winter</h2>
+            </a>
+        </div>
+        <div class="video-item">
+            <a href="https://youtu.be/i-9VVBLPlsw?si=hRjaJPJkeNo8CZdJ">
+                <img src="videos/venus.jpg" alt="Venus">
+                <h2>Venus</h2>
+            </a>
+        </div>
+    </div>
+  </main>
+</body>
+
+
+    <footer>
+       <div class="footer-content">
+        <p>&copy; 2024 Kir Roberts. All rights reserved.</p>
+       </div class="footer-content">
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active'); // Toggle 'active' class to show/hide menu
+        }
+    </script>
+</body>
+</html>

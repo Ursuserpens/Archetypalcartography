@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com?v=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Metamorphous&family=Rasa:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Metamorphous&family=Rasa:wght@300..700&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -29,6 +29,14 @@
                 </div>
             </nav>
         </div>
+
+    <section id="splash">
+        <div class="message">
+        <img src="images/eye 2.png" alt="Eye of Ra" class="blinking-image">
+             <span></span>
+        </div>
+    </section>
+
     </header>
 
     <section id="hero">
@@ -73,6 +81,55 @@
             <p>&copy; 2024 Kir Roberts. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const messages = [
+                "Elongating Muskrats...",
+                "Allocating Humphrey Capacity...",
+                "Expanding Volunteering Opportunities...",
+                "Undermining Existentialist Paradigms...",
+                "Cultivating Robust Claude-Based Ecosystems...",
+                "Spearheading Relentless Commitments...",
+                "Touching Base With Key Stakeholders...",
+                "Leveraging Industrial Insights...",
+                "Optimising Shareholder Value...",
+            ];
+
+            function shuffleArray(array) {
+                for (let i = array.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]];
+                }
+                return array;
+             }
+
+            const randomizedMessages = shuffleArray(messages).slice(0, 3);
+
+            const messageSpan = document.querySelector("#splash .message span");
+
+            let currentMessageIndex = 0;
+
+            function showNextMessage() {
+                messageSpan.textContent = randomizedMessages[currentMessageIndex];
+        
+                messageSpan.style.animation = "none";
+                void messageSpan.offsetWidth;
+                messageSpan.style.animation = "reveal 3s ease-in-out forwards";
+
+                currentMessageIndex++;
+                if (currentMessageIndex < randomizedMessages.length) {
+                    setTimeout(showNextMessage, 3000);
+                } else {
+                    setTimeout(() => {
+                        document.getElementById("splash").classList.add("fade-out");
+                    }, 3000);
+                }
+            }
+
+            showNextMessage();
+        });
+    </script>
 
     <script>
         function toggleMenu() {

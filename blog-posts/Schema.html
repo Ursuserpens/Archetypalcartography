@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beyond the Second Law - Kir Roberts</title>
+  <link rel="stylesheet" href="/blog-styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=EB+Garamond:wght@400;700&family=Metamorphous&family=Rasa:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo">
+        <a href="../index.html"><img src="../images/logo-white.png" alt="Kir Roberts Logo"></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../Images.html">Images</a></li>
+          <li><a href="../Videos.html">Videos</a></li>
+          <li><a href="../Audio.html">Audio</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="blog-heading-container">
+      <h1>Schematising the Phenomenal Cosmos</h1>
+    </div>
+
+	<section id="image-viewer">
+      <div id="viewer" class="image-viewer">
+	    <div id="pan-area">
+	      <img id="zoom-img" src="../images/Schema.jpg" alt="Detailed View">
+	    </div>
+      </div>
+    </section>
+    <section class="post-content">
+		<p>The above image (zoom and scroll enabled) shows the phenomenological schema which I am developing. Though it may look like one, it is not a taxonomy of discrete classes, nor a hierarchy of ontological ones.It is, rather, a generative system of orthogonal classes and species for describing the phenomenal cosmos.
+		<p>What I mean by this, is that the branching structure does not represent a developmental process, nor a value hierarchy, but families of orthogonal qualities which can be applied to almost any phenomena, or combined to describe hypothetical ones.
+I had three aims when making this:
+		<p>The first, was obviously to schematise the phenomenal cosmos, in other words, to 'cartographically' chart that which can be known to us, sensed by us, perceived by us.
+		<p>My second aim was to to make this system exhaustive - all possible knows and unknowns to be made classifiable by some combination of those classes, without it becoming too unwieldy.
+		<p>My final aim was to minimise redundancy between classes: to make each class, and each species within each class, truly orthogonal.
+		<p>Orthogonal here means that each class and species is an independent axis of description. Each class names a dimension that does not duplicate the work of another, in the way that length, width, and height are wholly distinct measurements of a given volume. In linear algebra, orthogonal vectors share no projection; in phenomenology, orthogonal classes share no hidden overlap of meaning.
+		<p>The purpose of such orthogonality is to provide the most accurate co-ordinates possible to 'locate' a given phenomena. Co-ordinates, here, means the vectors of qualitative description. Classes are to be combined additively; metaphorically speaking, each class can be perceived as a dimension, and each species is a 'data-point', or measurement, along that dimension. In fact, this is not so metaphorical; it is just that rather than using these vectors as one does to define a volume in space, these 'data-points' a measures of pure quality and have no magnitude.
+		<p>A phenomenon can be, say, outward-facing in attitude, operative in mode, specific in intelligibility, human in order, plural in articulation, radial in composition, under expanding pressure. None of these selections cancels the others; they interlock to yield a precise profile; a description with no redundancy.
+		<p>For example: we could make a three dimensional combination of an inward-facing attitude, in the human sphere, and in the operative mode, and find several phenomena for which this is a fitting description. It is broadly applicable, and tracks well with the general idea of an introvert.
+		<p>Adding further dimensions adds further specificity: if we add to this introverted concept the qualities of expanding, structuring, and openness, we deepen our concept - introversion which expansively structures in a permeable way. By addition, we can achieve an order of schematic depth which Jung's original psychological types cannot achieve on their own.
+		<p>Of course, it may be the case that each phenomenon is unique and unclassifiable; that a schema such as this can never do justice to the irreducible complexities such as can be found in the arts, nature, the sciences, and so on. In fact, my personal experiments using it as an analytic and deconstructive tool have already confirmed just that. Certain things do not fit neatly into a single species within a given class, and often have a quality of bridging between them. For example, a film may not neatly fit within a single mode; but it still may be useful notice how it switches between them in a patterned fashion.
+		<p>There is much in the image which is not at all self-explanatory. For this reason, I am working on writing clarifications for each species. This is a fairly large project, and will be worked on for some time. Updates will be provided as and when they are complete.
+      <hr>
+     
+    </section>
+  </main>
+
+<script src="https://unpkg.com/@panzoom/panzoom/dist/panzoom.min.js"></script>
+
+<script>
+  const zoomImage = document.getElementById('zoom-img');
+  const panzoom = Panzoom(zoomImage, {
+    contain: 'outside',
+    maxScale: window.innerWidth <= 768 ? 3 : 5,
+    minScale: 1
+  });
+
+  zoomImage.parentElement.addEventListener('wheel', panzoom.zoomWithWheel);
+</script>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 Kir Roberts. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -9,6 +9,10 @@ body {
     padding-bottom: 100px;
 }
 
+.madness-essay .bullet-point-list li {
+    text-align: left;
+}
+
 section {
     text-align: center;
     width: 60%;
@@ -339,6 +343,45 @@ nav ul li a:hover {
     vertical-align: super;
     line-height: 0;
     color: #000000;
+}
+
+.post-content .bibliography-entry {
+    font-family: 'EB Garamond', serif;
+    font-size: 12pt;
+    color: #000000;
+    line-height: 1.5;
+    text-align: left;
+    text-indent: 0;
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: #666;
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    font-size: 10pt;
+}
+
+.bullet-point-list {
+    list-style: none;
+    width: fit-content;
+    margin: 1.5rem auto;
+    padding: 0;
+}
+
+.madness-essay .bullet-point-list {
+    text-align: left;
 }
 
 /* Media Queries for Responsive Design */
